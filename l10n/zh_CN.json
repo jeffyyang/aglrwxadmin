@@ -23,35 +23,35 @@
     "components" : {
       "COMPONENTS" : "组件",
       "ui_kits" : {
-        "UI_KITS" : "UI Kits",
+        "UI_KITS" : "UI套件",
         "BUTTONS" : "按钮",
         "ICONS" : "图标",
         "GRID" : "网格",
         "BOOTSTRAP" : "Bootstrap",
-        "SORTABLE" : "Sortable",
-        "PORTLET" : "Portlet",
+        "SORTABLE" : "排序表格",
+        "PORTLET" : "信息组件",
         "TIMELINE" : "时间轴",
-        "VECTOR_MAP" : "Vector Map"
+        "VECTOR_MAP" : "矢量地图"
       },
       "table" : {
-        "TABLE" : "Table",
-        "TABLE_STATIC" : "Table static",
-        "DATATABLE" : "Datatable",
-        "FOOTABLE" : "Footable"
+        "TABLE" : "图表",
+        "TABLE_STATIC" : "统计图表",
+        "DATATABLE" : "数据表格",
+        "FOOTABLE" : "占位表格"
       },
       "form" : {
-        "FORM" : "Form",
-        "FORM_ELEMENTS" : "Form elements",
-        "FORM_VALIDATION" : "Form validation",
-        "FORM_WIZARD" : "Form wizard"
+        "FORM" : "表单",
+        "FORM_ELEMENTS" : "表单元素",
+        "FORM_VALIDATION" : "表单校验",
+        "FORM_WIZARD" : "表单向导"
       },
       "CHART" : "图表",
       "pages" : {
         "PAGES" : "页面",
-        "PROFILE" : "Profile",
-        "POST" : "Post",
+        "PROFILE" : "资料",
+        "POST" : "贴子",
         "SEARCH" : "搜索",
-        "INVOICE" : "Invoice",
+        "INVOICE" : "发票",
         "LOCK_SCREEN" : "屏幕锁定",
         "SIGNIN" : "登入",
         "SIGNUP" : "注册",
@@ -60,13 +60,13 @@
       }
     },
     "your_stuff" : {
-      "YOUR_STUFF": "Your Stuff",
-      "PROFILE" : "Profile",
+      "YOUR_STUFF": "你的档案",
+      "PROFILE" : "资料",
       "DOCUMENTS" : "文档"
     }
   },
-  "MILESTONE" : "Milestone",
-  "RELEASE" : "Release"
+  "MILESTONE" : "里程碑",
+  "RELEASE" : "发布版本"
 }
 
 }
