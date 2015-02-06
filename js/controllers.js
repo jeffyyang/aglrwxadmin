@@ -12,8 +12,8 @@ angular.module('app.controllers', ['pascalprecht.translate', 'ngCookies'])
 
       // config
       $scope.app = {
-        name: 'Angulr',
-        version: '1.1.3',
+        name: 'Jinlin',
+        version: '0.0.1',
         // for chart colors
         color: {
           primary: '#7266ba',

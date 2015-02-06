@@ -15,3 +15,5 @@ then preview:  http://localhost/angulr/index.html  in your browser.
 
 2: Documents locate "tpl/docs.html" or "http://localhost/angulr/index.html#/app/docs"
 online: http://flatfull.com/themes/angulr/#/app/docs
+
+

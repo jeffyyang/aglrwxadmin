@@ -39,7 +39,8 @@ var app = angular.module('app', [
         app.value      = $provide.value;
 
         $urlRouterProvider
-            .otherwise('/app/dashboard');
+            //.otherwise('/app/dashboard');              //  默认路由地址
+            .otherwise('/access/signin');                //  默认路由到登录页面
         $stateProvider            
             .state('app', {
                 abstract: true,
@@ -293,7 +294,7 @@ var app = angular.module('app', [
   });
 
   // Tell the module what language to use by default
-  $translateProvider.preferredLanguage('en');
+  $translateProvider.preferredLanguage('zh_CN');
 
   // Tell the module to store the language in the local storage
   $translateProvider.useLocalStorage();
