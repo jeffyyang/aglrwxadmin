@@ -1,6 +1,7 @@
 {
   "user" : {
     "name" : "Bossi",
-    "email": "bossi@g.com"
+    "email": "bossi@g.com",
+    "password": "123456"
   }
 }

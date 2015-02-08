@@ -12,7 +12,7 @@ angular.module('app.controllers', ['pascalprecht.translate', 'ngCookies'])
 
       // config
       $scope.app = {
-        name: 'Jinlin',
+        name: '近邻管理系统',
         version: '0.0.1',
         // for chart colors
         color: {
@@ -492,10 +492,11 @@ angular.module('app.controllers', ['pascalprecht.translate', 'ngCookies'])
     $scope.login = function() {
       $scope.authError = null;
       // Try to login
-      $http.post('api/login', {email: $scope.user.email, password: $scope.user.password})
+      // $http.post('api/login', {email: $scope.user.email, password: $scope.user.password})
+      $http.post('http://127.0.0.1:8888/services/users/login', {login_name: $scope.user.email, password: $scope.user.password})
       .then(function(response) {
-        if ( !response.data.user ) {
-          $scope.authError = 'Email or Password not right';
+        if (!response.result_code == 0 ) {
+          $scope.authError = response.result_msg;
         }else{
           $state.go('app.dashboard');
         }
@@ -512,10 +513,11 @@ angular.module('app.controllers', ['pascalprecht.translate', 'ngCookies'])
     $scope.signup = function() {
       $scope.authError = null;
       // Try to create
-      $http.post('api/signup', {name: $scope.user.name, email: $scope.user.email, password: $scope.user.password})
+      //$http.post('api/signup', {name: $scope.user.name, email: $scope.user.email, password: $scope.user.password})
+      $http.post('http://127.0.0.1:8888/services/users/register', {user_name: $scope.user.name, email: $scope.user.email, mobile: $scope.user.mobile, password: $scope.user.password})
       .then(function(response) {
-        if ( !response.data.user ) {
-          $scope.authError = response;
+        if ( !response.result_code == 0) {
+          $scope.authError = response.result_msg;
         }else{
           $state.go('app.dashboard');
         }
